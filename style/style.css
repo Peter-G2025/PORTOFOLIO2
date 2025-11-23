@@ -136,4 +136,10 @@ body{
   .main_content h1 {
     font-size: 2rem;
   }
+
+      .section2 img{
+    width: 480px;
+    height: 737.5px;
+  }
+
 }
