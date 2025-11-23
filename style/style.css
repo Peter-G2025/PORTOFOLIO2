@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to top, #6D7BE4 0%, #83F2E4 100%);
+    height: 100%;
+}
+
+.navbar {
+    background-image: linear-gradient(to top,  0%, #83F2E4 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.navbar_menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar_menu li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.6rem;
+    padding: 40px;
+    font-family: Arial;
+}
+
+/* ---- HAMBURGER ---- */
+.navbar_toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3.5px;
+    background-color: #ffffff;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 768px) {
+
+    .navbar_toggle {
+        display: flex;
+    }
+    .navbar_menu li a {
+        font-size: 1.3rem;
+    }
+
+    .navbar_menu {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-image: linear-gradient(to top, #6D7BE4 0%, #83F2E4 100%);
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 20px 0;
+        border-radius: 0px 0px 20px 20px;
+        display: none; /* κρυμμένο αρχικά */
+    }
+
+    .navbar_menu.active {
+        display: flex; /* ξεδιπλώνει το menu */
+    }
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1{
+    margin: 50px;
+    font-family: Arial;
+}
+
+.section1 p{
+    font-size: 24px;
+    padding-bottom: 20px;
+    font-weight: Bold;
+    color: #7D7D7D;
+}
+
+.section1 h1{
+    font-size: 64px;
+    padding-bottom: 20px;
+    font-weight: Bold;
+    color: black;
+}
+
+#p2{
+    padding-bottom:50px;
+}
+
+.section1 button{
+    width: 308px;
+    height: 86px;
+    background-image: linear-gradient(to right, #6D7BE4 0%, #83F2E4 100%);
+    border: none;
+}
+
+.section1 a{
+    font-size: 30px;
+    font-weight: medium;
+    font-family: Arial;
+    color: white;
+    text-decoration: none;
+}
+
+.logos{
+    padding-bottom: 50px;
+}
+
+.section2 img{
+    width: 690px;
+    height: 937.5px;
+}
+
+@media (max-width: 768px) {
+    .hero{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main_content h1 {
+    font-size: 2rem;
+  }
+}
